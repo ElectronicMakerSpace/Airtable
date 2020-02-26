@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+/*
 const movieData = [
   {
       title: 'Avengers: Infinity War',
@@ -20,7 +20,7 @@ const movieData = [
       imageURL: 'https://via.placeholder.com/362x200'
   }
 ];
-
+*/
 export class App extends Component {
   
   constructor(props) {
@@ -62,16 +62,16 @@ export class App extends Component {
 export default App;
 
 
-const MovieCard = ({ title, year, description, imageURL, uri }) => (
-  <div className="card">
+const MovieCard = ({ title, year, description, imageURL, uri, id}) => (
+  <div key={id} className="card">
     <img className="card-img-top" src={imageURL[0].url} alt="Movie Poster" />
       <div className="card-body">
         <h5 className="card-title">{ title }</h5>
         <p className="card-text">{description}</p>
-        <div className="text-center mb-3"><a href={uri} class="btn btn-secondary ">Leer mas...</a></div>
+        <div className="text-center mb-3"><a href={uri} className="btn btn-secondary ">Leer mas...</a></div>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">{year}</small>
+      <div className="card-footer">
+        <small className="text-muted">{year}</small>
       </div>
   </div>
 );
