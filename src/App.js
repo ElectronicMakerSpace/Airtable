@@ -14,7 +14,7 @@ const movieData = [
       imageURL: 'https://via.placeholder.com/362x200'
   },
   {
-      title: 'The Incredibles 2',
+      title: 'The Incredibles 3',
       year: '2018',
       description: 'Everyone’s favorite family of superheroes is back in “Incredibles 2” – but this time Helen is in the spotlight, leaving Bob at home with Violet and Dash to navigate the day-to-day heroics of “normal” life.',
       imageURL: 'https://via.placeholder.com/362x200'
